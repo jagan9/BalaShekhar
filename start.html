@@ -1,0 +1,509 @@
+<!-- kamandla jagan -->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>start here</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+		body{
+			transition: 0.6s;
+			animation: jga 1.5s ease;
+		}
+		@keyframes jga{
+			0%{
+				opacity: 0;
+				transform: translateY(-40px);
+			}
+			100%{
+				opacity: 1;
+				transform: translateY(0px);
+			}
+		}
+		header{
+			position: sticky;
+			top: 0;
+			height: 80px;
+			margin: 5px;
+			z-index: 1;
+			background-color: orange;
+			color: #fff;
+			border-bottom-right-radius: 20px;
+			border-top-left-radius: 20px;
+		}
+		#bars{
+			
+			position: absolute;
+			padding: 22px;
+			top: 0px;
+			visibility: hidden;
+			right: 20px;
+			color: #fff;
+
+		}
+		#bars{
+			cursor: pointer;
+		}
+		header .container{
+
+			width: 99%;
+			height: 80px;
+			margin: 0px auto;
+		}
+		header .container .logo ul{
+			width: 100px;
+			cursor: pointer;
+
+		}
+		header .container .logo ul li{
+			list-style-type: none;
+			font-size: 1.7em;
+			font-weight: bold;
+			text-align: center;
+			padding-top: 25px;
+		}
+		header .container .list{
+			float: right;
+			
+		}
+		header .container .list ul{
+			top: 0;
+			width: 500px;
+			right: 0;
+			position: absolute;
+		}
+		header .container .list ul li{
+			list-style-type: none;
+			font-size: 1.2em;
+			display: inline-block;
+			font-weight: bold;
+			text-align: center;
+			margin: 30px 30px 10px 30px;
+			padding-bottom: 4px;
+			overflow: hidden;
+			align-items: center;
+			cursor: pointer;
+			transition:all 0.6s ease;
+		}
+		header .container .list ul li a{
+			text-decoration: none;
+			color: #fff;
+			transition: 0.5s;
+		}
+		header .container .list ul li a:hover{
+			
+			color: blue;
+			
+		}
+		.subheader{
+			background-color:#EBF5F5  ;
+			text-align: center;
+			width: 99%;
+			margin: 0px auto;
+		}
+		.subheader h1{
+			font-size: 3em;
+			font-weight: bold;
+			padding: 20px;
+		}
+		.footer span{
+			cursor: pointer;
+			transition: 0.3s;
+		}
+		.footer span:hover{
+			color: #F75F14;
+		}
+		.mission{
+			width: 99%;
+			margin: 0px auto;
+			background-color: pink;
+			padding: 40px 30px;
+		}
+		.mission h1{
+			text-align: center;
+
+		}
+		.mission h4{
+			width: 14%;
+			background: red;
+			height: 2px;
+			margin: 10px auto;
+		}
+		.mission p{
+			padding: 5px 40px;
+			color: #fff;
+			font-size: 1.234em;
+		}
+		.container11{
+			box-sizing: border-box;
+			display: flex;
+			width: 99%;
+			margin: 20px auto;
+		}
+		.container11 .text{
+			flex: 1;
+			padding: 20px 50px;
+		}
+		.container11 h1{
+			text-align: center;
+		}
+		.container11 h4{
+			width: 14%;
+			background: red;
+			height: 2px;
+			margin: 10px auto;
+		}
+		.container11 p,h3{
+			font-size: 1.23em;
+			line-height: 30px;
+		}
+		.container11 .photo{
+			flex: 1;
+			text-align: center;
+		}
+		.container11 .photo img{
+			margin-top: 100px;
+			width: 80%;
+			height: 80%;
+		}
+		.container11 i{
+			padding-right: 8px;
+			font-size: 22px;
+			color: 	#00FFFF;
+		}
+		.about{
+			width: 99%;
+			margin: 0px auto;
+		}
+		.about h1{
+			text-align: center;
+		}
+		.about h4{
+			width: 10%;
+			background: red;
+			height: 2px;
+			margin: 10px auto;
+		}
+		.about h3{
+			font-weight: bold;
+			text-align: center;
+		}
+		.about p{
+			width: 65%;
+			margin: 0px auto;
+			font-size: 1.16em;
+			line-height: 27px;
+		}
+		.hard{
+			width: 77%;
+			margin: 0px auto;
+			font-size: 1.2em;
+			padding: 10px ;
+			border-radius: 10px;
+			background-color: #ECF0F1;
+		}
+		.hard input{
+			width: 90%;
+			margin: 0px auto;
+			height: 30px;
+		}
+		.hard button{
+			text-align: center;
+			padding: 10px 30px ;
+			background-color: red;
+			color: white;
+			border: none;
+
+		}
+		.hard button:focus{
+			outline: none;
+		}
+		.hard button:hover{
+			background-color:green;
+		}
+		.rr1,.rr2{
+			margin: 10px 0px 10px 30px;
+
+		}
+		.btn{
+			text-align: center;
+			width: 100%;
+			margin-top: 10px;
+
+		}
+		.subfoot h4{
+			width: 10%;
+			background: red;
+			height: 2px;
+		}
+		.subfoot {
+			display: flex;
+			width: 96%;
+			margin: 0px auto;
+			padding:80px 0px 80px 0px;
+			background-color:  #ECF0F1;
+		}
+		.subfoot h4{
+			flex: 1;
+		}
+		.subfoot button {
+			flex: 1;
+			background-color: #ECF0F1;
+			border: none;
+			font-size: 1.2em;
+			padding: 10px 50px;
+			margin-top: -10px;
+
+			transition: 0.5s ease;
+		}
+
+		.subfoot button:focus{
+			outline: none;
+		}
+		.subfoot button:hover{
+			background-color: #2EC1F5;
+		}
+
+
+
+
+
+
+
+@media (max-width: 620px){
+			header .container .list{
+				display: none;
+			}
+			#bars{
+				visibility: unset;
+			}
+		.subheader h1{
+			font-size: 2.5em;
+		}
+		.mission p{
+			padding: 5px 0px;
+		}
+		.container11 .text{
+			flex: 1;
+			padding: 20px 10px;
+		}
+		.about p{
+			width: 87%;
+		}
+		.container11 .text .hard{
+			width: 100%;
+		}
+	}
+@media (max-width: 190px){
+			#bars{
+				right: -10px;
+			}}
+			@media (max-width: 700px){
+				.container11{
+					display: flex;
+					flex-direction: column;
+				}
+				.container11 .photo img{
+					margin-top: 20px;
+				}
+			}
+			.menu{
+			position: absolute;
+			top: 0px;
+			right: 0%;
+			visibility: hidden;
+			z-index: 1500;
+			width:50%;
+			background-color:#E5E5E5;
+		}
+		.menu a{
+			text-decoration: none;
+		}
+		.menu{
+			text-align: center;
+		}
+		.menu ul{
+			margin-top: 40px;
+		}
+		.menu li{
+			list-style-type: none;
+			padding: 14px 20px;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="menu" id="menu1">
+			<div class="wrong" id="wrong1" style="font-size: 28px;
+			position: absolute;top: 1rem;left: 1.4rem;
+			cursor: pointer;"><i class="fa fa-times"></i></div>
+			<div class="list">
+				<ul>
+					<li><a  href="index.html">Home</a></li>
+					<li><a style="text-decoration: underline;" href="#">Start Here</a></li>
+					<li><a href="blog11.html">Blog</a></li>
+					<li><a href="courses.html">Courses</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<header>
+		<div class="container">
+			<div class="logo">
+				<ul><a style="text-decoration: none;color: #fff;" href="BAWBS.html"><li>BAWBS</li></a></ul>
+			</div>
+			<i id="bars" class="fa fa-bars" style="display: block;position: absolute; top: 0px; font-size: 36px"></i>
+			<div class="list">
+				
+				<ul>
+					<li><a  href="index.html">Home</a></li>
+					<li><a style="color: blue;" href="#">Start Here</a></li>
+					<li><a href="blog11.html">Blog</a></li>
+					<li><a href="courses.html">Courses</a></li>
+
+					
+				</ul>
+				
+			</div>
+		</div>
+	</header>
+	<div class="subheader">
+		<h1>BALA SHEKHAR</h1>
+	</div>
+	<div class="mission">
+		<h1>The Mission</h1>
+		<h4></h4>
+		<p>Our goal is to teach you the skills and equip you with the tools to become the best mobile developer and programmer you can be.  We want to make you a well-rounded developer.  That’s the mission.</p>
+	</div>
+
+
+
+
+	<div class="container11">
+		<div class="text">
+			<h1>Welcome, All!</h1>
+			<h4></h4>
+			<p>Whether you’re trying to learn a new skill from scratch or want to refresh your memory on something you’ve learned in the past, transitioning to Java and Android Development, you’ve come to the right place.</p>
+			<h3><i class="fa fa-check">    </i>40,000+ students over 170 countries</h3>
+			<h3><i class="fa fa-check">    </i>Several premium courses</h3>
+			<h3><i class="fa fa-check">    </i>100+ free tutorials</h3>
+			<h3><i class="fa fa-check">    </i>A genuine desire to help you succeed</h3>
+			<p>Your background doesn’t matter.  As long as you know how to turn on the computer and have the drive to learn, you’ll master programming and Android development.</p><br>
+			<p>And, if you’re not a beginner, not to worry!  We have courses for you to sharpen those existing skills and become an even better developer.</p>
+		</div>
+		<div class="photo">
+			<img src="bala.jpg">
+		</div>
+	</div>
+
+
+<div class="about">
+	<h1>About Bala</h1>
+	<h4></h4>
+	<h3>Android, Java Developer, and Teacher</h3>
+	<p><i>I am the founder of Build Apps With bala, where I teach people Java and Android Development. </i><br> <br>
+
+I was born and raised in Mozambique, a country located in Southeast Africa bordered on the East by the Indian Ocean.  Growing up I was obsessed with how things work.  At a young age, I was able to disassemble VCR tapes and fix them, which ended up being my first business ( if you are interested in hearing more about this, message me).<br> <br>
+
+Later, in 2002 when I was 16, I was given an amazing opportunity to come to the U.S. as an exchange student.  I lived in Helena, Montana for a year.   It was an extraordinary experience which opened a lot of doors for me.<br> <br>
+
+In 2005,  another opportunity came knocking.  This time I returned to the U.S. for college while living in the Pacific Northwest in the city of Spokane, WA.<br> <br>
+
+I graduated from Whitworth University with a B.S in Computer Science in 2009.   After graduating college, I worked for a company, building Android and iOS mobiles apps as well as web applications.<br> <br>
+
+In late 2014, my wife inspired me to start teaching online.  Up to that point, I had never realized how much I love teaching.  It brings me joy and a sense of purpose.<br> <br>
+
+I've taught more than 40,000 students from over 170 countries how to program in Java and how to build Android apps.<br>   <br>
+
+It's humbling to hear students stories: how they have taken my courses and were then to get their dream jobs building apps.  Or how some students were struggling to understand Java Programming concepts, and after taking my course, those "hard-to-grasp" concepts were finally well understood.<br> <br>
+
+Teaching is my passion.  My mission is to help 1 Million students reach their goal of becoming the best developers they can be.  I want to make you, a well-rounded developer.<br> <br>
+
+Thank you so much for being here.  It means the world to me!<br> <br>
+
+Bala Shekhar</p>
+</div>
+
+<br><br><br>
+
+
+	<div class="container11">
+		<div class="text">
+			<h1>What Can You Learn Here</h1>
+			<h4></h4>
+			<p>Our courses are tailored to beginner, intermediate and expert programmers.   Most of our topics are targeted toward learning Java, Kotlin and Android Mobile development. So, if you want to learn Java, Kotlin and how to design and build Android apps, then you're in the right place!</p><br>
+			<h1>Stay Up to Date</h1>
+			<h4></h4>
+			<p>Get all of our latest tutorials and courses delivered to you by signing up for our weekly email newsletter, which includes special discounts too. You can also subscribe to our YouTube Channel and like our Facebook Page to get instant updates.</p>
+			<div class="hard">
+				<div class="rr1"><label>First name</label><br>
+				<input type="text" placeholder="name" required>
+				</div>
+				<div class="rr2">
+				<label>Email address</label><br>
+				<input type="email" placeholder="Ex: bala@gmail.com">
+			</div>
+				<div class="btn"><button>SIGN UP</button></div>
+			</div>
+		</div>
+		<div class="photo">
+			<img src="bala.jpg">
+		</div>
+	</div>
+<div class="subfoot">
+	<h4></h4>
+	<a href="Courses.html"><button>VIEW COURSES</button></a>
+	<h4></h4>
+</div>
+
+
+<div class="footer" style="background-color: #d5d5d5;text-align: center; ">
+	<p style="padding: 20px 0px ;margin-bottom: 0;">COPYRIGHT 2014-2018 BAWBS <span>BuildAppsWithBalaShekhar </span>  |   ALL RIGHTS RESERVED   |   Terms and Privacy <span>Terms and Privacy</span></p>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+	var btn=document.getElementById('bars');
+	var menu=document.getElementById('menu1');
+	btn.addEventListener('click',myfirstfunction);
+	var re=document.getElementById('wrong1');
+
+
+	re.addEventListener('click',mysfunction);
+	function myfirstfunction() {
+		menu.style.visibility="unset";
+		menu.style.position="fixed";
+	}
+	function mysfunction() {
+		menu.style.visibility="hidden";
+	}
+
+
+
+</script>
+</body>
+</html>
