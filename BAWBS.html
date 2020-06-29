@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>BAWBS</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			width: 94%;
+			margin: 0px auto;
+			transition: 0.6s;
+			animation: jga 1.5s ease;
+		}
+		@keyframes jga{
+			0%{
+				opacity: 0;
+				transform: translateY(-40px);
+			}
+			100%{
+				opacity: 1;
+				transform: translateY(0px);
+			}
+		}
+		header{
+			background-color:#E9EEEE;
+			display: flex;
+			padding: 30px;
+			justify-content: space-between;
+			align-items: center;
+		}
+		header .logo p{
+			font-size: 28px;
+			color: #F920AD;
+			font-weight: 500;
+		}
+		header .home button{
+			padding: 10px 40px;
+			font-size: 24px;
+			margin-right: 30px;
+			border:1px solid #F920AD;
+			background-color: transparent;
+			color: #F920AD;
+			cursor: pointer;
+			transition: 0.5s ease-out;
+		}
+		header .home button:hover{
+			background-color:#F920AD;
+			color: #fff;
+		}
+		.text1 h1{
+			position: absolute;
+			top: 33%;
+			left: 40%;
+			font-weight: 600px;
+			font-size: 3em;
+			color: #fff;
+		}
+		.container11{
+			box-sizing: border-box;
+			display: flex;
+			width: 99%;
+			margin: 20px auto;
+		}
+		.container11 .text{
+			flex: 1;
+			padding: 20px 50px;
+		}
+		.container11 h1{
+			text-align: center;
+		}
+		.container11 h4{
+			width: 14%;
+			background: red;
+			height: 2px;
+			margin: 10px auto;
+		}
+		.container11 p,h3{
+			font-size: 1.23em;
+			line-height: 30px;
+		}
+		.container11 .photo{
+			flex: 1;
+			text-align: center;
+		}
+		.container11 .photo img{
+			width: 80%;
+			height: 600px;
+		}
+		.container11 i{
+			padding-right: 8px;
+			font-size: 22px;
+			color: 	#00FFFF;
+		}
+		.container11 h6{
+			width: 100%;
+			background: black;
+			height: 3px;
+			margin: 10px auto;
+		}
+		.container11 .btn:hover{
+			background-color: black;
+		}
+		.container3{
+			width: 99%;
+			margin: 0px auto;
+		}
+		.container3 img{
+			height: 250px;
+			width: 200px;
+
+		}
+		.container3 .img{
+			border: 2px solid #0ED2F7;
+			padding: 5px ;
+		}
+		.container3 .first1{
+			box-sizing: border-box;
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			margin: 0px auto;
+		}
+		.container3 .first1 .text{
+			background-color:#DCE3E4;
+			margin-top: 0px;
+			padding: 10px;
+		}
+		.container3 .f1,.f2,.f3{
+			width: 33%;
+			margin: 50px 10px 70px 10px;
+			text-align: center;
+			height: 250px;
+
+		}
+		.container3 .header1{
+			text-align: center;
+			margin-top: 100px;
+			margin-bottom: 50px;
+		
+		}
+		.container3 .header1 h1{
+			font-size: 3em;
+		}
+		.container3 button{
+			background-color:  #00FFFF ;
+			color: #333;
+			border: none;
+			border-radius: 4px;
+			padding: 3px 5px;
+			transition: 0.4s;
+		}
+		.container3 button:focus{
+			outline: none;
+		}
+		.container3 button:hover{
+			background-color:#5D6D7E;
+			color: #fff;
+		}
+		.header1 h4{
+			width: 14%;
+			background: red;
+			height: 2px;
+			margin: 10px auto;
+		}
+		.soc{
+			margin: 100px 0px  60px 20px;
+		}
+		.soc h1{
+			font-weight: bold;
+			font-size: 3.3em;
+			font-style: oblique;
+		}
+		.social{
+			margin-top: 50px;
+			display: flex;
+			justify-content: space-around;
+		}
+		.social h1{
+			font-size: 40px;
+			color: #5DADE2;
+		}
+		.soc h4{
+			width: 35%;
+			background: #333;
+			height: 3px;
+			margin: 10px 0px;
+		}
+		.container8 h4{
+			width: 100%;
+			background: red;
+			height: 2px;
+			margin: 10px 0px;
+		}
+		.container8{
+			background-color: #E74C3C;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			text-align: center;
+			padding: 20px 30px;
+		}
+		.card1,.card2,.card3{
+			width: 25%;
+			background-color: #ECF0F1;
+			margin:40px 0px;
+			overflow: hidden;
+			padding: 20px 30px;
+			border-top-right-radius: 60px;
+			border-bottom-left-radius: 60px;
+		}
+		.container8 img{
+			height: 100px ;
+			width: 100px;
+			margin-bottom: 40px;
+			border-radius: 50%;
+		}
+		.container9 h4{
+			width: 100%;
+			background: red;
+			height: 2px;
+			margin: 10px 0px;
+		}
+		.line h4{
+			width: 100%;
+			background: #333;
+			height: 2px;
+			margin: 50px 0px 100px 0px;
+		}
+		.container9{
+			background-color: #E74C3C;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			text-align: center;
+			margin: 10px 0px;
+			padding: 20px 30px;
+		}
+		.card4,.card5,.card6{
+			background-color: #ECF0F1;
+			width: 25%;
+			margin:40px 0px;
+			overflow: hidden;
+			padding: 20px 30px;
+			border-top-right-radius: 60px;
+			border-bottom-left-radius: 60px;
+		}
+		.container9 img{
+			height: 100px ;
+			width: 100px;
+			margin-bottom: 40px;
+			border-radius: 50%;
+		}
+		.container9 span{
+			color: #D35400;
+		}
+		.container8 span{
+			color: #D35400;
+		}
+		#bars{
+			
+			position: absolute;
+			padding: 34px 22px 22px 22px;
+			top: 30px;
+			visibility: hidden;
+			right: 20px;
+			color: #F920AD;
+
+		}
+		#bars{
+			cursor: pointer;
+		}
+		nav{
+			display: none;
+		}
+
+
+
+
+
+
+
+
+
+
+		@media (max-width: 560px){
+			.text1 h1{
+				left: 10%;
+				top: 30%;
+			}
+			.img1{
+				height: 180px;
+			}
+		}
+		@media (max-width: 720px ){
+			.container3 .first1{
+			display: flex;
+			flex-direction: column;
+		}
+		.container3 .f1,.f2,.f3{
+			width: 97%;
+			height: auto;
+			margin: 0px;
+			padding: 10px;
+			
+		}
+		}
+		@media (max-width: 850px){
+			.container8{
+				flex-direction: column;
+			}
+			.card1,.card2,.card3{
+				width: 100%;
+				margin: 10px 0px;
+			}
+			.container9{
+				flex-direction: column;
+			}
+			.card4,.card5,.card6{
+				width: 100%;
+				margin: 10px 0px;
+			}
+			.social{
+			display: flex;
+			flex-direction: column;
+		}
+		nav{
+			display: block;
+		}
+		.social h1{
+			padding: 10px 0px;
+		}
+		}
+		@media (max-width: 700px){
+				.container11{
+					display: flex;
+					flex-direction: column;
+				}
+				.container11 .photo img{
+					margin-top: 20px;
+				}
+			}
+			@media( max-width: 850px){
+.menu{
+			position: absolute;
+			top: 0px;
+			right: 0%;
+			visibility: hidden;
+			z-index: 1500;
+			width:50%;
+			background-color:#E5E5E5;
+		}
+		.menu a{
+			text-decoration: none;
+		}
+		.menu{
+			text-align: center;
+		}
+		.menu ul{
+			margin-top: 40px;
+		}
+		.menu li{
+			list-style-type: none;
+			padding: 14px 20px;
+		}
+		#bars{
+				visibility: unset;
+			}
+			header .home{
+				display: none;
+			}
+
+				}
+				@media (max-width: 190px){
+			#bars{
+				right: -10px;
+			}}
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="menu" id="menu1">
+			<div class="wrong" id="wrong1" style="font-size: 28px;
+			position: absolute;top: 1rem;left: 1.4rem;
+			cursor: pointer;"><i class="fa fa-times"></i></div>
+			<div class="list">
+				<ul>
+					<li><a style="color:#F920AD;" href="index.html">Home</a></li>
+					<li><a style="color:#F920AD;" href="https://mis.iitism.ac.in"
+			target="_blank">Mis</a></li>
+					<li><a style="color:#F920AD;" href="https://parent.iitism.ac.in/index.php/parent_portal/portal1" target="_blank">Parent portal</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+	<header>
+		<div class="logo">
+			<p>BAWBS</p>
+		</div>
+		<i id="bars" class="fa fa-bars" style="display: block;position: absolute; top: 0px; font-size: 40px"></i>
+		<div class="home">
+			<a href="index.html"><button>Home</button></a>
+			<a href="https://mis.iitism.ac.in"
+			target="_blank"><button>Mis</button></a>
+			<a href="https://parent.iitism.ac.in/index.php/parent_portal/portal1" target="_blank"><button>Parent Portal</button></a>
+		</div>
+	</header>
+
+<!-- sub head -->
+<img class="img1"  style="margin-top: 50px; width: 100%; height: 200px;" src="a.png">
+	<div class="text1">
+		<h1>Hi, I'm Bala</h1>
+	</div>
+
+<!-- sub head -->
+
+
+
+<div class="container11">
+	<div class="photo">
+			<img src="bala.jpg">
+		</div>
+		<div class="text">
+			<h1>Welcome, All!</h1>
+			<h4></h4>
+			<p>I graduated from Whitworth University with a B.S in Computer Science in 2009.   After graduating college, I worked for a company, building Android and iOS mobiles apps as well as web applications.
+				<br><br>
+
+In late 2014, my wife inspired me to start teaching online.  Up to that point, I had never realized how much I love teaching.  It brings me joy and a sense of purpose.<br><br>
+
+I've taught more than 80,000 students from over 170 countries how to program in Java and how to build Android apps.  <br><br>
+
+It's humbling to hear students stories: how they have taken my courses and were then to get their dream jobs building apps.  Or how some students were struggling to understand Java Programming concepts, and after taking my course, those "hard-to-grasp" concepts were finally well understood.<br><br>
+
+Teaching is my passion.  My mission is to help 1 Million students reach their goal of becoming the best developers they can be.  I want to make you, a well-rounded developer.<br><br>
+
+Thank you so much for being here.  It means the world to me!</p><br><br>
+<h6></h6>
+
+<br>
+<h2 style="font-size: 2.2em;">Subscribe to our mailing list</h2>
+<p>Get access to new courses, discounts and more.</p><br>
+<div class="input11">
+	<input style="width: 100%;height: 40px;font-size: 20px;" type="text" placeholder="name..." required><br><br>
+	<input style="width: 100%;height: 40px;font-size: 20px;" type="email" placeholder="email..." required><br><br>
+	<button class="btn" style="width: 100%;height: 40px;border:none;background-color: #9314F5;
+	color: #fff;
+	border">sign up</button>
+</div>
+		</div>
+		
+	</div>
+
+
+
+	<!-- programes -->
+
+	<div class="container3">
+	<div class="header1">
+		<h1>Development Courses</h1>
+		<h4></h4>
+	</div>
+	<div class="main3">
+		<div class="first1">
+			<div class="f1">
+				<div class="img">
+					<img style="width: 100%;
+					height: 100%;"  src="1.jpg">
+				</div>
+				<div class="text">
+					<h4>The complete Andriod-Material UI/UX</h4>
+					<button>LEARN MORE</button>
+				</div>
+			</div>
+			<div class="f2">
+				<div class="img">
+					<img  style="width: 100%;
+					height: 100%;" src="2.jpg">
+				</div>
+				<div class="text">
+					<h4>The Complete Java 9 Masterclass</h4>
+					<button>LEARN MORE</button>
+				</div>
+			</div>
+			<div class="f3">
+				<div class="img">
+					<img style="width: 100%;
+					height: 100%;" src="3.jpg">
+				</div>
+				<div class="text">
+					<h4>Flutter – Complete Development Course</h4>
+					<button>LEARN MORE</button>
+				</div>
+			</div>
+		</div>
+		<div class="first1">
+			<div class="f1">
+				<div class="img">
+					<img style="width: 100%;
+					height: 100%;" src="1.jpg">
+				</div>
+				<div class="text">
+					<h4>The complete Andriod-Material UI/UX</h4>
+					<button>LEARN MORE</button>
+				</div>
+			</div>
+			<div class="f2">
+				<div class="img">
+					<img style="width: 100%;
+					height: 100% ;" src="2.jpg">
+				</div>
+				<div class="text">
+					<h4>The Complete Java 9 Masterclass</h4>
+					<button>LEARN MORE</button>
+				</div>
+			</div>
+			<div class="f3">
+				<div class="img">
+					<img style="width: 100%;
+					height: 100%;" src="3.jpg">
+				</div>
+				<div class="text">
+					<h4>Flutter – Complete Development Course</h4>
+					<button>LEARN MORE</button>
+				</div>
+			</div>
+		</div>
+		<div class="first1">
+			<div class="f1">
+				<div class="img">
+					<img style="width: 100%;
+					height: 100%;" src="1.jpg">
+				</div>
+				<div class="text">
+					<h4>The complete Andriod-Material UI/UX</h4>
+					<button>LEARN MORE</button>
+				</div>
+			</div>
+			<div class="f2">
+				<div class="img">
+					<img style="width: 100%;
+					height: 100% ;" src="2.jpg">
+				</div>
+				<div class="text">
+					<h4>The Complete Java 9 Masterclass</h4>
+					<button>LEARN MORE</button>
+				</div>
+			</div>
+			<div class="f3">
+				<div class="img">
+					<img style="width: 100%;
+					height: 100%;" src="3.jpg">
+				</div>
+				<div class="text">
+					<h4>Flutter – Complete Development Course</h4>
+					<button>LEARN MORE</button>
+				</div>
+			</div>
+		</div>
+	 </div>
+</div>
+	<!-- programes -->
+
+<!-- social -->
+<div class="soc">
+	<div>
+		<h1>As Featured on</h1>
+	</div>
+	<div class="social">
+		<a style="text-decoration: none;" href="https://www.hackerrank.com/dashboard" 
+		target="_blank"><h1 style="cursor: pointer;">Hacker<span style="background-color: #5DADE2; color: #fff;border-radius: 20px;padding: 3px;">Rank</span></h1></a>
+
+
+		<a style="text-decoration: none;" href="https://codeforces.com/" target="_blank"><h1 style="cursor: pointer;">code<span style="background-color: #5DADE2; color: #fff;border-radius: 20px;padding: 3px;">Forces</span></h1></a>
+
+
+		<a style="text-decoration: none;" href="https://www.codechef.com/node" target="_blank"><h1 style="cursor: pointer;">Code<span style="background-color: #5DADE2; color: #fff;border-radius: 20px;padding: 3px;">Chef</span></h1></a>
+	</div><br><br>
+	<h4></h4>
+</div>
+<!-- social -->
+
+
+
+<!-- cards -->
+<div class="container8">
+	<div class="card1">
+		<div class="img">
+			<img src="1.jpg">
+			<h4></h4>
+		</div>
+		<div class="text">
+			<br><p>This is a course which takes you from beginning to the end.  That is the best thing about it.  It does not leave you in the middle of something.  Paulo is an excellent instructor as he knows what concepts are important for the students to master.  He provides engaging examples, and real world ones too.</p><br><h4></h4>
+		</div>
+		<div class="foot">
+			<h3 style="font-style: italic;">Shubham <span>- Android and Java Student</span> </h3>
+		</div>
+	</div>
+	<div class="card2">
+		<div class="img">
+			<img src="1.jpg">
+			<h4></h4>
+		</div>
+		<div class="text">
+			<br><p>Excellent explanation of Java.  Easy for beginners step by step.</p><br><h4></h4>
+		</div>
+		<div class="foot">
+			<h3 style="font-style: italic;">Ella J  <span>- Android App Developer</span> </h3>
+		</div>
+	</div>
+	<div class="card3">
+		<div class="img">
+			<img src="1.jpg">
+			<h4></h4>
+		</div>
+		<div class="text">
+			<br><p>I liked the course and the Paulo's teaching style.  I'm taking another course with him because he's very good in my opinion.  He starts from beginner to advanced, very organized classes.  A lot of examples in the course, and he was updating the course often too.  Money well spent!</p><br><h4></h4>
+		</div>
+		<div class="foot">
+			<h3 style="font-style: italic;">Heribero <span>- Java Student</span> </h3>
+		</div>
+	</div>
+</div>
+<div class="container9">
+	<div class="card4">
+		<div class="img">
+			<img src="1.jpg">
+			<h4></h4>
+		</div>
+		<div class="text">
+			<br><p>Paulo is a great instructor. I have another Android courses but these one is the best of them. The instructor doesn't waste time and introduces you as quickly as possible. Oh, and this course has a good Java introduction. I recommend a lot if you has some knowledge in Java and Android (as me) and if you're a newer programmer</p><br><h4></h4>
+		</div>
+		<div class="foot">
+			<h3 style="font-style: italic;">Gustava  <span>- Android and Java Student</span> </h3>
+		</div>
+	</div>
+	<div class="card5">
+		<div class="img">
+			<img src="1.jpg">
+			<h4></h4>
+		</div>
+		<div class="text">
+			<br><p>An outstanding course to learn and understand Kotlin from the ground up and to get enough confidence to start making Android App development. just awesome …</p><br><h4></h4>
+		</div>
+		<div class="foot">
+			<h3 style="font-style: italic;">Gregory  <span>- Android App Developer</span> </h3>
+		</div>
+	</div>
+	<div class="card6">
+		<div class="img">
+			<img src="1.jpg">
+			<h4></h4>
+		</div>
+		<div class="text">
+			<br><p> like his thorough explanations. This course gives outstanding practical programming examples.ginners...</p><br><h4></h4>
+		</div>
+		<div class="foot">
+			<h3 style="font-style: italic;">Alvina <span>- Mobile Developer Student</span> </h3>
+		</div>
+	</div>
+
+</div>
+<!-- cards -->
+
+<div class="line">
+	<h4></h4>
+</div>
+
+
+<script type="text/javascript">
+	var btn=document.getElementById('bars');
+	var menu=document.getElementById('menu1');
+	btn.addEventListener('click',myfirstfunction);
+	var re=document.getElementById('wrong1');
+
+
+	re.addEventListener('click',mysfunction);
+	function myfirstfunction() {
+		menu.style.visibility="unset";
+		menu.style.position="fixed";
+	}
+	function mysfunction() {
+		menu.style.visibility="hidden";
+	}
+
+
+
+</script>
+
+
+
+</body>
+</html>
